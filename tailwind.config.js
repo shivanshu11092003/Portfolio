@@ -7,7 +7,8 @@ export default {
     
     extend: {
       colors:{
-        webText:"#3CCF91"
+        webText:"#3CCF91",
+        btncolor:"#1c1c1c"
       }
     },
   },
