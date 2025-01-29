@@ -1,4 +1,6 @@
 import { GithubOutlined, LinkedinFilled, MailOutlined } from "@ant-design/icons"
+import Hyperspeed from "./Blocks/Backgrounds/Hyperspeed/Hyperspeed"
+import ShinyText from "./Blocks/TextAnimations/ShinyText/ShinyText"
 
 function App() {
 
@@ -8,6 +10,8 @@ function App() {
 
 
       <div className='w-full flex flex-col items-center h-screen   bg-black'>
+
+        <Hyperspeed />
 
         <div className="w-2/3">
           <div id='navbar' className='flex justify-between px-3 items-center  h-[4rem] border-b border-gray-700 text-white' >
@@ -29,7 +33,11 @@ function App() {
             <div className="text-4xl font-semibold pl-9 text-webText ">Hey there!, I'm-</div>
 
             <div className="pl-20">
-              <div className="text-9xl mt-6 font-bold  text-white">Shivanshu Gupta.</div>
+
+              <div className="text-9xl mt-6 font-bold  text-white">
+                <ShinyText text={"Shivanshu Gupta."} disabled={false} speed={3} className='custom-class' />
+
+              </div>
 
               <div className="text-white mt-6 flex flex-col  text-4xl ">
                 <div className="flex"> <div className="font-bold">Software Engineer.</div>
@@ -41,7 +49,7 @@ function App() {
               </div>
 
               <div className="text-gray-300 mt-11 text-2xl">
-                <div>🚀 Currently specializing in Frontend (React.js / Android )</div>
+                <div>🚀 Currently specializing in Frontend (React.js  )</div>
                 <div className="flex">⚡ Frontend Intern at  &nbsp; <div className="text-webText"> GGL.</div></div>
               </div>
 
@@ -52,10 +60,10 @@ function App() {
 
 
               </div>
-
+              {/* 
               <div className="mt-[13rem]">
                 <div className="text-white text-2xl font-bold">⚡ About Me</div>
-              </div>
+              </div> */}
             </div>
 
 
